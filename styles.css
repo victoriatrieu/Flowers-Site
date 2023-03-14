@@ -1,7 +1,12 @@
 * {
     box-sizing: border-box;
+    
+}
+
+body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+    text-align: center;
+}
 
 a {
     text-decoration:none;
@@ -9,9 +14,8 @@ a {
 
 img.logo {
     height:auto;
-    max-width:5%;
-    border-radius:50%
-  }
+    max-width:5%;  
+}
 
 .header {
     background-color:bisque;
@@ -23,6 +27,7 @@ img.logo {
     display:flex;
     justify-content:space-between;
 }
+
 .nav {
     display:flex;
     justify-content:flex-end;
@@ -32,7 +37,6 @@ img.logo {
 
 .second-container {
     display:flex;
-    border:1px solid red;
     justify-content:space-between;
     background-color:rgb(143, 57, 100)
 }
@@ -43,7 +47,6 @@ img.logo {
     justify-content: center;
     align-items: center;
     gap: 35px;
-    border:1px solid blue;
 }
 
 .header-one {
@@ -53,8 +56,56 @@ img.logo {
 
 .button {
 }
+
 .flower-tower {
     height:auto;
     max-width:40%;
     border-radius:5%;
+}
+
+.header-two {
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 800px;
+}
+
+.container-three {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.galleria {
+    flex-direction:column;
+    align-items:center;
+    align-content:center;
+}
+
+img.gallery {
+    height:auto;
+    max-width: 300px;
+    border-radius:10%;
+}
+
+.text {
+    border: 1px solid orange;
+}
+
+.quote {
+    background-color:bisque;
+    border-radius:10%;
+}
+
+.bottom-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:pink;
+    
+}
+.more {
+    
 }
