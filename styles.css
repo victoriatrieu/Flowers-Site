@@ -3,29 +3,41 @@
 *::after {
     box-sizing: inherit;
     margin: 0;
-    padding: 0;
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 a {
     text-decoration:none;
+    color:rgb(201, 201, 201)
 }
 
-img.logo {
-    height:auto;
-    max-width:5%;
-    border-radius:50%;
-    padding:10px;
+/* COMMON PADDING / BG COLOR*/
+.header,
+.top-container,
+.second-container,
+footer {
+    background-color: rgb(143, 57, 100);
 }
 
 .header,
 .second-container,
+.container-three,
+.quote-body,
+.bottom-container,
+.more,
 footer {
-    background-color: rgb(143, 57, 100);
+    padding: 1em 8em;
+}
+
+/*  HEADER - LOGO AND NAV ONLY */
+img.logo {
+    border-radius:50%;
+    height:auto;
+    max-width:5%;
+    padding:10px;
 }
 
 .header {
@@ -40,44 +52,57 @@ footer {
 
 .nav {
     display:flex;
-    justify-content:flex-end;
-    gap:10px;
+    justify-content:space-between;
+    gap:20px;
     align-items:center;
 }
 
+/* BOTTOM HALF OF HEADER */
 .second-container {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 .website-info {
     display:flex;
     flex-direction:column;
-    align-items: center;
-    flex:1;
-    gap: 35px;
-    margin:20px;
-    padding:20px;
+    align-self:center;
+    gap:20px;
+    width: 80%;
+}
+
+.website-info p {
+    color:white;
 }
 
 .header-one {
     font-size:48px;
-    font-weight:600px;
+    font-weight:bold;
+    color:white;
 }
 
-.button {
+button {
+    background-color:rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 70px;
+    height: 20px;
+    flex: 0 0 auto;
 }
 
 .flower-tower {
     height:auto;
-    width:35%;
-    padding:20px;
+    max-width:35%;
+    padding:50px;
+    border-radius:10%;
 }
 
+/* SOME RANDOM INFORMATION SECTION */
 .header-two {
+    border-bottom: 3px solid pink;
+    color:rgb(173, 32, 79);
     font-size: 30px;
-    margin: 20px;
-    font-weight: 800px;
+    font-weight: bold;
+    margin:20px;
     text-align:center;
 }
 
@@ -102,15 +127,15 @@ img.gallery {
 }
 
 .text {
-    border: 1px solid orange;
+    text-align:center;
 }
 
+/* QUOTE SECTION */
 .quote-body {
     background-color:bisque;
     display:flex;
     justify-content:center;
     text-align:flex-start;
-
 }
 
 .quote {
@@ -125,13 +150,14 @@ img.gallery {
     font-size:18px;
     font-style:normal;
     font-weight:bold;
-
 }
+
+/* CALL TO ACTION SECTION */
 .bottom-container {
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:rgb(136, 41, 99)
+    margin:50px;
 }
 
 .more p,
@@ -142,17 +168,18 @@ img.gallery {
 
 .more {
     display:flex;
-    flex-direction:column;
-    padding:50px; 
+    align-items:center;
+    background-color:rgb(184, 41, 129)
 }
 
 .call {
     font-weight:bold;
+    font-size: 20px;
 }
 
+/* FOOTER */
 footer {
     text-align:center;
     padding:20px;
-    margin-top:50px;
     color:white;
 }
