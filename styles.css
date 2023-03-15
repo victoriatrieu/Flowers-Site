@@ -1,11 +1,14 @@
-* {
-    box-sizing: border-box;
-    
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+    
 }
 
 a {
@@ -14,11 +17,18 @@ a {
 
 img.logo {
     height:auto;
-    max-width:5%;  
+    max-width:5%;
+    border-radius:50%;
+    padding:10px;
+}
+
+.header,
+.second-container,
+footer {
+    background-color: rgb(143, 57, 100);
 }
 
 .header {
-    background-color:bisque;
     display:flex;
     flex-direction:column;
 }
@@ -38,15 +48,16 @@ img.logo {
 .second-container {
     display:flex;
     justify-content:space-between;
-    background-color:rgb(143, 57, 100)
 }
 
 .website-info {
     display:flex;
     flex-direction:column;
-    justify-content: center;
     align-items: center;
+    flex:1;
     gap: 35px;
+    margin:20px;
+    padding:20px;
 }
 
 .header-one {
@@ -59,14 +70,15 @@ img.logo {
 
 .flower-tower {
     height:auto;
-    max-width:40%;
-    border-radius:5%;
+    width:35%;
+    padding:20px;
 }
 
 .header-two {
     font-size: 30px;
     margin: 20px;
     font-weight: 800px;
+    text-align:center;
 }
 
 .container-three {
@@ -93,19 +105,54 @@ img.gallery {
     border: 1px solid orange;
 }
 
-.quote {
+.quote-body {
     background-color:bisque;
-    border-radius:10%;
+    display:flex;
+    justify-content:center;
+    text-align:flex-start;
+
 }
 
+.quote {
+    max-width:75%;
+    font-size:25px;
+    padding:50px;
+    font-style:italic;
+}
+
+.Shannon {
+    text-align:end;
+    font-size:18px;
+    font-style:normal;
+    font-weight:bold;
+
+}
 .bottom-container {
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-color:pink;
-    
+    background-color:rgb(136, 41, 99)
 }
+
+.more p,
+.call {
+    color:white;
+    flex-wrap:wrap;
+}
+
 .more {
-    
+    display:flex;
+    flex-direction:column;
+    padding:50px; 
+}
+
+.call {
+    font-weight:bold;
+}
+
+footer {
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:white;
 }
