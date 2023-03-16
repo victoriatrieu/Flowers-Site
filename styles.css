@@ -36,7 +36,7 @@ footer {
 img.logo {
     border-radius:50%;
     height:auto;
-    max-width:5%;
+    width:50px;
     padding:10px;
 }
 

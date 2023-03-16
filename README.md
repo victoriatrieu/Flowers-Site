@@ -1,1 +1,1 @@
-# Flowers-Site
+This is my landing page project for The Odin Project. The focus of this project is to replicate a basic landing page design using HTML, CSS and Flexbox.
